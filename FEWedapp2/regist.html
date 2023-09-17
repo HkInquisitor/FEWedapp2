@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Đăng ký thông tin sinh viên</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Nhập thông tin sinh viên</h2>
+        <form action="https://www.google.com" method="post">
+            <form action="server_endpoint_url" method="post" enctype="multipart/form-data">
+                <div class="input-group">
+                    <label for="fullName">Họ và tên:</label>
+                    <input type="text" id="fullName" name="fullName">
+                </div>
+
+                <div class="input-group">
+                    <label for="studentID">Mã số sinh viên:</label>
+                    <input type="text" id="studentID" name="studentID">
+                </div>
+
+                <div class="input-group">
+                    <label for="dateOfBirth">Ngày sinh:</label>
+                    <input type="date" id="dateOfBirth" name="dateOfBirth">
+                </div>
+
+                <div class="input-group">
+                    <label for="major">Chuyên ngành:</label>
+                    <input type="checkbox" id="software" name="major[]" value="Công nghệ phần mềm">
+                    <label for="software">Công nghệ phần mềm</label>
+
+                    <input type="checkbox" id="infoSys" name="major[]" value="Hệ thống thông tin">
+                    <label for="infoSys">Hệ thống thông tin</label>
+
+                    <input type="checkbox" id="networkSec" name="major[]" value="Bảo mật mạng">
+                    <label for="networkSec">Bảo mật mạng</label>
+                </div>
+
+                <div class="input-group">
+                    <label for="hobbies">Sở thích:</label><br>
+
+                    <input type="checkbox" id="Write a program" name="Favor" value="VIẾT CHƯƠNG TRÌNH">
+                    <label for="Write a program">VIẾT CHƯƠNG TRÌNH</label><br>
+
+                    <input type="checkbox" id="build database" name="Favor" value="PHÂN TÍCH CDSL">
+                    <label for="build database">PHÂN TÍCH CSDL</label><br>
+
+                    <input type="checkbox" id="Build a network project" name="Favor" value="XÂY ĐỰNG ĐỒ ÁN MẠNG">
+                    <label for="Build a network project">XÂY DỰNG ĐỒ ÁN MẠNG</label><br>
+                </div>
+
+                <div class="input-group">
+                    <label for="favoriteColors">Màu sắc yêu thích:</label>
+                    <input type="text" id="favoriteColors" name="favoriteColors">
+                </div>
+
+                <div class="input-group">
+                    <label for="avatar">Ảnh đại diện:</label>
+                    <input type="file" id="avatar" name="avatar" accept="image/*">
+                </div>
+
+                <div class="input-group">
+                    <label for="webLoginName">Tên đăng nhập web:</label>
+                    <input type="text" id="webLoginName" name="webLoginName">
+                </div>
+
+                <div class="input-group">
+                    <label for="loginPassword">Mật khẩu đăng nhập:</label>
+                    <input type="password" id="loginPassword" name="loginPassword">
+                </div>
+
+                <button type="submit" class="send-data-btn">Gửi dữ liệu lên máy chủ</button>
+            </form>
+            </form>
+    </div>
+</body>
+</html>
